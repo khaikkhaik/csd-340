@@ -1,0 +1,30 @@
+/* CSS Grid */
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 10%;
+}
+
+/* Centering text */
+h1 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8); /* Optional */
+}
+
+h3 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8); /* Optional */
+}
+
+/* Centering images */
+figure {
+    text-align: center;
+}
+
+/* Styling captions */
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(0, 0, 0, 0.6); /* Optional */
+}
