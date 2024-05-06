@@ -1,0 +1,28 @@
+/* Add styles from Bhandari_Mod6_2.css here */
+
+/* Additional styles for Assignment 8.2 */
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#movies th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+#movies td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+}
+
+.container {
+    margin: 2% 5% 100px;
+}
