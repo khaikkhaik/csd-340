@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        img {
+            cursor: pointer;
+            width: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <div id="image-container">
+	<img src="images/travelling.PNG" alt="Travel is life">
+        <img src="images/hiking.PNG" alt="Outdoor is life">
+        <img src="images/cooking.PNG" alt="Cooking is life">
+    </div>
+    <script>
+        function handleImageClick(imgElement) {
+            alert('You clicked on ' + imgElement.alt);
+        }
+    </script>
+</body>
+</html>
