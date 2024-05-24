@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+    <input type="text" id="inputBox" placeholder="Enter a value">
+    <button onclick="addElement()">Add</button>
+    <button onclick="deleteLastElement()">Delete Last Entry</button>
+    <button onclick="displayElements()">Display</button>
+
+    <ul id="displayArea"></ul>
+
+    <script>
+        let myArray = [];
+
+        function addElement() {
+            const inputBox = document.getElementById('inputBox');
+            const value = inputBox.value;
+            if (value) {
+                myArray.push(value);
+                alert(`Added: ${value}`);
+                inputBox.value = '';
+            } else {
+                alert('Please enter a value.');
+            }
+        }
+
+        function deleteLastElement() {
+            if (myArray.length > 0) {
+                const removedElement = myArray.pop();
+                alert(`Deleted: ${removedElement}`);
+            } else {
+                alert('Array is empty.');
+            }
+        }
+
+        function displayElements() {
+            const displayArea = document.getElementById('displayArea');
+            displayArea.innerHTML = '';
+            if (myArray.length > 0) {
+                myArray.forEach((element, index) => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${index + 1}. ${element}`;
+                    displayArea.appendChild(listItem);
+                });
+            } else {
+                alert('Array is empty.');
+            }
+        }
+    </script>
+</body>
+</html>
